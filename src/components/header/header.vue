@@ -1,13 +1,38 @@
+<!--顶部样式-->
 <template>
-$END$
+  <div class="header">
+    <span class="icon"></span>
+    <h1 class="text">Musik Suchen</h1> <!-- 主界面名称-->
+  </div>
 </template>
 
 <script>
-export default {
-name: "header"
-}
+  export default {
+    name: 'm-header'
+  }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .header {
+    height: 44px;
+    text-align: center;
+    color: $color-theme;
+    font-size: 0;
+    .icon {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 6px;
+      width: 30px;
+      height: 32px;
+      margin-right: 9px;
+      @include bg-imege('logo');
+      background-size: 30px 32px;
+    }
+    .text {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 44px;
+      font-size: $font-size-large;
+    }
+  }
 </style>

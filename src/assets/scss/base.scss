@@ -1,0 +1,9 @@
+// 定义主页面基础样式
+body, html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: $color-background;  //背景的颜色在此处定义
+  color: $color-text;
+}
